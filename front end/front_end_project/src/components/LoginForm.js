@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-
+import './Loginform.css';
 
 
 
@@ -40,33 +40,62 @@ const LoginForm = ({ toggleLoginForm }) => {
 
   return (
     <div>
-    <form onSubmit={handleLogin}>
-      <div>
-        <label htmlFor="email">Email:</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-        />
+      <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
       </div>
-      <div>
-        <label htmlFor="password">Password:</label>
-        <input
-          type="password"
-          id="password"
-          name="password"
-          value={formData.password}
-          onChange={handleChange}
-          required
-        />
-      </div>
-      <button type="submit">Login</button>
-    </form>
-     </div>
-      
+      <form onSubmit={handleLogin}>
+      <h3>Login Here</h3>
+        <div>
+          <label htmlFor="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div>
+          <label htmlFor="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            value={formData.password}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <button type="submit">Login</button>
+        <div class="social">
+          <div class="go"><i class="fab fa-google"></i>  Google</div>
+          <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
+        </div>
+      </form>
+    </div>
+   
+    // <div class="background">
+    //     <div class="shape"></div>
+    //     <div class="shape"></div>
+    // </div>
+    // <form>
+    //     <h3>Login Here</h3>
+
+    //     <label for="username">Username</label>
+    //     <input type="text" placeholder="Email or Phone" id="username">
+
+    //     <label for="password">Password</label>
+    //     <input type="password" placeholder="Password" id="password">
+
+    //     <button>Log In</button>
+        // <div class="social">
+        //   <div class="go"><i class="fab fa-google"></i>  Google</div>
+        //   <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
+        // </div>
+    // </form>
+  
   );
 };
 
