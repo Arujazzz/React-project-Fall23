@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import LoginForm from './LoginForm';
 import RegisterForm from './RegisterForm';
-import '../App.css';
+import './Main.css';
 
 
 
@@ -31,7 +31,6 @@ import '../App.css';
       </div>
        
       <div className='header_container'>EmployeeGallery</div>
-    
     </div>
     
   )
