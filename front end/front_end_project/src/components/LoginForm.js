@@ -44,7 +44,7 @@ const LoginForm = ({ toggleLoginForm }) => {
         <div class="shape"></div>
         <div class="shape"></div>
       </div>
-      <form onSubmit={handleLogin}>
+      <form class="loginform" onSubmit={handleLogin}>
       <h3>Login Here</h3>
         <div>
           <label htmlFor="email">Email:</label>
@@ -75,26 +75,6 @@ const LoginForm = ({ toggleLoginForm }) => {
         </div>
       </form>
     </div>
-   
-    // <div class="background">
-    //     <div class="shape"></div>
-    //     <div class="shape"></div>
-    // </div>
-    // <form>
-    //     <h3>Login Here</h3>
-
-    //     <label for="username">Username</label>
-    //     <input type="text" placeholder="Email or Phone" id="username">
-
-    //     <label for="password">Password</label>
-    //     <input type="password" placeholder="Password" id="password">
-
-    //     <button>Log In</button>
-        // <div class="social">
-        //   <div class="go"><i class="fab fa-google"></i>  Google</div>
-        //   <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
-        // </div>
-    // </form>
   
   );
 };
